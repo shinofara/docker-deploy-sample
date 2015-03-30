@@ -6,7 +6,7 @@ DockerでBlue Green Deploymentのサンプル
 当サンプルは以下の構成で動きます。
 
 | 192.168.33.99:80（不変）| Nginx | Ubuntu | VirtualBox(Vagrant) | 
-| :9999（ポート可変）     | Nginx | Ubuntu | Docker              |
+| :9999（ポート変動）     | Go    | Ubuntu | Docker              |
 
 ## 準備
 
