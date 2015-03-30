@@ -8,6 +8,7 @@ CURRENT_CONTAINERS=`docker ps | grep $APP_IMG_NAME | awk '{print $1}'`
 echo "[Running containers]"
 echo "$CURRENT_CONTAINERS"
 
+rm -f index.html
 echo `date` > index.html
 
 docker run \
