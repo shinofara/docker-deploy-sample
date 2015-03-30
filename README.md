@@ -61,3 +61,10 @@ dockerコンテナが立ち上がった事を確認
 ```
 $ docker ps
 ```
+
+## Version
+
+| version | 構成           | URL                                                           |
+| ------- | -------------- | ------------------------------------------------------------- |
+| v1.1.0  | Nginx -> Go    | https://github.com/shinofara/docker-deploy-sample/tree/v1.1.0 |
+| v1.0.0  | Nginx -> Nginx | https://github.com/shinofara/docker-deploy-sample/tree/v1.0.0 |
