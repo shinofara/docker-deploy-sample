@@ -8,7 +8,14 @@ DockerでBlue Green Deploymentのサンプル
 | 192.168.33.99:80（不変）| Nginx | Ubuntu | VirtualBox(Vagrant) | 
 | :9999（ポート可変）     | Nginx | Ubuntu | Docker              |
 
-## リバースプロキシ構築
+## 準備
+
+```
+$ git clone https://github.com/shinofara/docker-deploy-sample.git
+$ cd docker-deploy-sample
+```
+
+## リバースプロキシ兼、作業用環境構築
 
 ubuntuをvirtualbox内に立ち上げる
 
@@ -21,7 +28,7 @@ http://192.168.33.99
 が、ここで起動してるNginxはリバースプロキシでしか無いので、エラーとなります。
 
 
-## アプリケーションサーバを構築
+### 作業用環境内に、アプリケーションサーバを構築
 
 ubuntu環境にssh
 
@@ -54,7 +61,3 @@ dockerコンテナが立ち上がった事を確認
 ```
 $ docker ps
 ```
-
-
-
-
